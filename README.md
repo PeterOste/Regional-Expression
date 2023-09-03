@@ -12,9 +12,9 @@ Regex, an abbreviation for "regular expression," is a versatile tool employed to
 ## Regex Summary
 Before we dive into the details, let's have a quick overview of what regex is and what it can do. Regex is a sequence of characters that defines a search pattern. It allows you to:
 
-    - Search for specific text patterns within a larger body of text.
-    - Validate and extract data based on predefined criteria.
-    - Replace or modify text that matches a pattern.
+- Search for specific text patterns within a larger body of text.
+- Validate and extract data based on predefined criteria.
+- Replace or modify text that matches a pattern.
 
 ## License
 This tutorial is open-source and available under the MIT License.
