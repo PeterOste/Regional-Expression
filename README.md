@@ -40,7 +40,7 @@ Anchors are the markers which specify where a match should start or end within t
 We'll explore how to use these anchors effectively and provide examples of their usage.
 
 **Example:**
-
+```javascript
 const regex = /^Hello/; // Matches if the string starts with "Hello"
 const regex2 = /World!$/; // Matches if the string ends with "World!"
 
