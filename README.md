@@ -43,7 +43,7 @@ We'll explore how to use these anchors effectively and provide examples of their
 ```javascript
 const regex = /^Hello/; // Matches if the string starts with "Hello"
 const regex2 = /World!$/; // Matches if the string ends with "World!"
-
+```
 ### Quantifiers
 
 Quantifiers are used to determine how many times a specific character or group should appear in the input text. Commonly used quantifiers include:
@@ -54,28 +54,28 @@ Quantifiers are used to determine how many times a specific character or group s
 - `{}`: Specifies a specific range of occurrences.
 
 **Example:**
-
+```javascript
 const regex = /\d{2,4}/; // Matches 2 to 4 consecutive digits
 const regex2 = /a+b*c?d/; // Matches patterns like "ad", "aabbd", "abcd"
-
+```
 ### OR Operator
 
 The OR operator (`|`) allows you to match one of multiple patterns. It can be used to create alternatives. For example, 
 `(cat|dog)` would match either "cat" or "dog."
 
 **Example:**
-
+```javascript
 const regex = /apple|banana/; // Matches "apple" or "banana"
-
+```
 ### Character Classes
 
 Character classes define sets of characters that can match at a specific position in the input text. In JavaScript regex, you can create custom character classes using square brackets (`[]`). For instance, `[A-Za-z]` matches any uppercase or lowercase letter.
 
 **Example:**
-
+```javascript
 const regex = /[0-9]/; // Matches any single digit
 const regex2 = /[aeiou]/; // Matches any vowel
-
+```
 ### Flags
 Flags provide additional options for regex patterns in JavaScript. Two common flags are:
 
@@ -83,39 +83,39 @@ Flags provide additional options for regex patterns in JavaScript. Two common fl
 - `g` (global): Searches for all occurrences of the pattern in the input string, not just the first one.
 
 **Example:**
-
+```javascript
 const regex = /example/i; // Matches "example" case-insensitively
 const regex2 = /\d+/g; // Matches all sequences of digits in the input
-
+```
 ### Grouping and Capturing
 
 Grouping and capturing allow you to isolate parts of a regex pattern for further use. In JavaScript regex, you can create groups using parentheses. For example, `(\d{2})-(\d{2})-(\d{4})` captures day, month, and year in a date.
 
 **Example:** 
-
+```javascript
 const regex = /(\d{2})-(\d{2})-(\d{4})/;
 const match = regex.exec('05-12-2023');
 console.log(match[1]); // Captures '05' (day)
 console.log(match[2]); // Captures '12' (month)
 console.log(match[3]); // Captures '2023' (year)
-
+```
 ### Bracket Expressions
 
 Bracket expressions in JavaScript regex provide a way to match a range of characters. For instance, `[A-Z]` matches any uppercase letter.
 
 **Example:** 
-
+```javascript
 const regex = /[A-F]/; // Matches uppercase letters from A to F
-
+``` 
 ### Greedy and Lazy Match
 
 Greedy and lazy matching affect how regex quantifiers behave in JavaScript. Greedy quantifiers attempt to match as much as possible, while lazy quantifiers match as little as possible.
 
 **Example:** 
-
+```javascript
 const greedyRegex = /".*"/; // Greedy match, matches the whole string within double quotes
 const lazyRegex = /".*?"/; // Lazy match, matches the smallest string within double quotes
-
+``` 
 ### Boundaries
 
 In JavaScript regex, boundaries are crucial for matching whole words or specific positions within words. `\b` asserts a word boundary, while `\B` asserts a non-word boundary.
