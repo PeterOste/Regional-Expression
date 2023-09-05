@@ -119,23 +119,29 @@ const lazyRegex = /".*?"/; // Lazy match, matches the smallest string within dou
 ### Boundaries
 
 In JavaScript regex, boundaries are crucial for matching whole words or specific positions within words. `\b` asserts a word boundary, while `\B` asserts a non-word boundary.
+**Example:**
+```javascript
+const regex = /\bword\b/; // Matches the word "word" as a whole word
+```
 
 ### Back-references
 
 Back-references in JavaScript regex allow you to refer back to captured groups within the same pattern. For instance, `(\w+) \1` matches repeated words.
 
 **Example:** 
-
+```javascript
 const regex = /(\w+) \1/; // Matches repeated words like "hello hello"
-
+```
 ### Look-ahead and Look-behind
 
 Look-ahead (`(?=...)`) and look-behind (`(?<=...)`) assertions are advanced regex techniques in JavaScript. They allow you to assert that a particular pattern is or isn't ahead or behind the current position.
 
 **Example:**
-
+```javascript
 const regex = /foo(?=bar)/; // Matches "foo" only if it's followed by "bar"
-
+```
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! I'm Peter, a passionate software developer with over 0 years of experience in the world of programming and regular expressions (regex). I created this tutorial to simplify regex and make it accessible to everyone, including myself.
+
+You can find more of my coding projects at https://github.com/PeterOste
